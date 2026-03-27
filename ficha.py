@@ -24,7 +24,7 @@ def ficha():
     #   - Código secreto: nombre invertido en mayúsculas
     #   - Las 3 notas, su suma, promedio y promedio entero
     #   - Cierre decorativo usando repetición de string ("=" * 24)
-    pass
+    
     nombre_completo = input("Ingrese el nombre completo del alumno : ").strip().title()
     email = input("Ingrese el email del alumno: ")
     nota_1 = input("Ingrese nota : ")
@@ -59,10 +59,10 @@ def ficha():
     print(f"Caracteres en nombre: {len(nombre_completo)}")
     print(f"Iniciales: {iniciales   }")
     print(f"Usuario: {usuario}")
-    print(f"Email valido: {"@" in email}")
+    print(f"Email valido: {'@' in email}")
     print(f"Dominio: {dominio}")
-    print(f"Nombre para archivo: { nombre_completo.strip().title().replace(" ", "_")}")
-    print(f"Cantidad de a: { nombre_completo.count("a")}")
+    print(f"Nombre para archivo: { nombre_completo.strip().title().replace(' ', '_')}")
+    print(f"Cantidad de a: { nombre_completo.count('a')}")
     print(f"Codigo secreto: {codigo_secreto}")
     print(f"Nota 1: {nota_1}")
     print(f"Nota 2: {nota_2}")
